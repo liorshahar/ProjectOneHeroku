@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="../../favicon.ico">
         <title>Customer Service API</title>
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/">
 
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
         </script>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../public/style/style.css">
     </head>
 
     <body>
@@ -24,12 +25,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+                
                     </ul>
                 </nav>
                 <h3 class="text-muted">Customer service API</h3>
@@ -43,34 +39,38 @@
 
             <div class="row marketing">
                 <div class="col-lg-6">
-                    <h4>Get all customers</h4>
-                    <p>
-                        HTTP verb : GET <br>
-                        Parametes - non <br>
-                        <a href="https://customers-service-cancel.herokuapp.com/getAllCustomers">https://customers-service-cancel.herokuapp.com/getAllCustomers</a><br>
-                        <img src="../assets/img/getAll.PNG" class="img-fluid" alt="Responsive image">
-                    </p>
-
-                    <h4>Get customer by id</h4>
-                    <p>
-                        HTTP verb POST:   <br>
-                        Parametes - customer_id <br>
-                        <a href="#">https://customers-service-cancel.herokuapp.com/getCustomerBooks</a><br>
-                        <button>https://customers-service-cancel.herokuapp.com/getCustomerBooks</button>
-                        <label id="post_json"></label>
-                    </p>
+                    <div class="frame">
+                        <h4>Get all customers</h4>
+                        <p>
+                            HTTP verb : GET <br>
+                            Parametes - non <br>
+                            <a href="https://customers-service-cancel.herokuapp.com/getAllCustomers">https://customers-service-cancel.herokuapp.com/getAllCustomers</a><br>
+                            <img src="../assets/img/getAll.PNG" class="img-fluid" alt="Responsive image">
+                        </p>
+                    </div>
+                    <div class="frame">
+                        <h4>Get customer by id</h4>
+                        <p>
+                            HTTP verb POST:   <br>
+                            Parametes - customer_id <br>
+                            <a href="#">https://customers-service-cancel.herokuapp.com/getCustomerBooks</a><br>
+                            <button type="button" class="btn btn-success">https://customers-service-cancel.herokuapp.com/getCustomerBooks</button>
+                            <label id="post_json"></label>
+                        </p>
+                    </div>
                     <br>
                     <br>
                     <br>
-
-                    <h4>Get book that customer want to cancel</h4>
-                    <p>
-                        HTTP verb GET :   <br>
-                        Parametes - customer_id , book_id <br>
-                        <a href="https://customers-service-cancel.herokuapp.com/getCustomerCanceldBook/123/12d">https://customers-service-cancel.herokuapp.com/getCustomerCanceldBook/:customerId/:bookId</a>
-                        <br>
-                        <img src="../assets/img/book.JPG" class="img-fluid" alt="Responsive image">
-                    </p>
+                    <div class="frame">
+                        <h4>Get book that customer want to cancel</h4>
+                        <p>
+                            HTTP verb GET :   <br>
+                            Parametes - customer_id , book_id <br>
+                            <a href="https://customers-service-cancel.herokuapp.com/getCustomerCanceldBook/123/12d">https://customers-service-cancel.herokuapp.com/getCustomerCanceldBook/:customerId/:bookId</a>
+                            <br>
+                            <img src="../assets/img/book.JPG" class="img-fluid" alt="Responsive image">
+                        </p>
+                    </div>
                 </div>
 
             </div>
