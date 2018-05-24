@@ -85,7 +85,7 @@ app.get('/getCustomerCanceldBook/:customerId/:bookId', (req, res) => {
                   res.status(404).json('book id or customer id not found');
               } else {
                     res.set('Content-Type', 'application/json');
-                    res.set('header-One' , 'getCustomerBooks');
+                    res.set('header-One' , 'getCustomerCanceldBook');
                     res.status(200);
                     res.json(data);
               }
