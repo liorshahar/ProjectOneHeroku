@@ -94,8 +94,9 @@ app.get('/getCustomerCanceldBook/:customerId/:bookId', (req, res) => {
           });
 });
 
-app.all('/' , (req , res)=>{
+app.all('/*' , (req , res)=>{
   res.status(200).sendFile(`${__dirname}/views/apireject.html`);
 });
+
 app.listen(port);
 console.log(`listening on port ${port}`);
