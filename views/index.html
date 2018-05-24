@@ -33,7 +33,7 @@
 
             <div class="jumbotron">
                 <h1 class="display-3">Customer service - Cancellations</h1>
-                <p class="lead">This site explain about the customer service cancellation api test
+                <p class="lead">This site explain about the customer service cancellation api 
                 </p>
             </div>
 
@@ -44,6 +44,7 @@
                         <p>
                             HTTP verb : GET <br>
                             Parametes - non <br>
+                            <p>Error log : db is empty</p>
                             <a href="https://customers-service-cancel.herokuapp.com/getAllCustomers">https://customers-service-cancel.herokuapp.com/getAllCustomers</a><br>
                             <img src="../assets/img/getAll.PNG" class="img-fluid" alt="Responsive image">
                         </p>
@@ -53,6 +54,7 @@
                         <p>
                             HTTP verb POST:   <br>
                             Parametes - customer_id <br>
+                            <p>Error log : customer not found</p>
                             <a href="#">https://customers-service-cancel.herokuapp.com/getCustomerBooks</a><br>
                             <button type="button" class="btn btn-success">https://customers-service-cancel.herokuapp.com/getCustomerBooks</button>
                             <label id="post_json"></label>
@@ -66,6 +68,7 @@
                         <p>
                             HTTP verb GET :   <br>
                             Parametes - customer_id , book_id <br>
+                            <p>Error log : book id or customer id not found</p>
                             <a href="https://customers-service-cancel.herokuapp.com/getCustomerCanceldBook/123/12d">https://customers-service-cancel.herokuapp.com/getCustomerCanceldBook/:customerId/:bookId</a>
                             <br>
                             <img src="../assets/img/book.JPG" class="img-fluid" alt="Responsive image">
